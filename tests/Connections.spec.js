@@ -29,7 +29,7 @@ test('connection' , async({browser}) =>{
 
     await connection.click();
 
-    console.log(await expect(page).toHaveURL("https://app.dayschedule.in/connections"));
+    await expect(page).toHaveURL("https://app.dayschedule.in/connections");
 
     await page.pause();
 
