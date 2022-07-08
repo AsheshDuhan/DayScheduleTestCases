@@ -7,7 +7,13 @@ test('connection' , async({browser}) =>{
     await page.goto('https://app.dayschedule.in/login');
 
     const connection = page.locator('.nav-link ').nth(3);
+    
     const googleCalender = page.locator('[title="Add new connection"]').first();
+
+    const email =  page.locator('[type="email"]');
+    const password =  page.locator("input[type='password']");
+    const allow =  page.locator('.VfPpkd-vQzf8d').nth(1);
+
 
 
 
@@ -18,7 +24,7 @@ test('connection' , async({browser}) =>{
     await page.locator("#password").fill("Ashi$h2710");
     await page.locator('button[type="submit"]').click();
 
-    // await page.waitForLoadState("networkidle");
+    await page.waitForLoadState("networkidle");
     await page.locator(".close").click();
 
 
@@ -28,23 +34,68 @@ test('connection' , async({browser}) =>{
 
 
 
-    await  googleCalender.click();
-    await page.locator('[type="email"]').type('ashish.duhan@agenty.com');
-    await page.locator('.VfPpkd-RLmnJb').nth(1).click();
+    await googleCalender.click();
+
+    await email.type("ashish.duhan@agenty.com");
+
+    await page.locator('.VfPpkd-vQzf8d').nth(1).click();
+
     await page.pause();
 
-    await page.locator('.whsOnd ').nth(0).type('Ashi$h2710');
 
 
-    await page.locator('.VfPpkd-RLmnJb').nth(1).click();
 
-    await page.locator(".VfPpkd-RLmnJb").click();
+    await password.type("Ashi$h2710");
+    await page.locator('.VfPpkd-vQzf8d').nth(1).click();
 
+    await allow.click();
     await expect(page).toHaveURL('https://app.dayschedule.in/connections');
-    let calender = connected;
-        if("calender = not connected"){
-            console.log("fail");
-        }else{(console.log("Pass"));
+
+    let calender = 'connected';
+
+       
+    if("calender = connected"){
+            console.log("Pass");
+        }else{(console.log("Fail"));
     }
 
+
 });
+
+test.only("delete conection", async({page})=>{
+    await page.goto('https://app.dayschedule.in/login');
+
+    const username = page.locator('#email');
+    const signinbtn = page.locator("button[type='submit']");
+    const connection = page.locator('.nav-link ').nth(3);
+    
+    const googleCalender = page.locator('[title="Add new connection"]').first();
+
+    
+
+    await username.type('ashish.duhan@agenty.com');
+    await page.locator("#password").fill('Ashi$h2710');
+
+    await signinbtn.press('enter');
+    await page.waitForLoadState("networkidle");
+    await page.locator(".close").click();
+
+    
+    await expect(page).toHaveURL('https://app.dayschedule.in/resources');
+    await connection.click();
+
+
+
+    await googleCalender.click();
+
+
+})
+
+
+  
+
+
+
+    
+
+    

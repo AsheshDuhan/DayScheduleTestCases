@@ -4,11 +4,11 @@ const config = {
 
    testDir: './tests',
   
-   timeout: 20 * 1000,
+   timeout: 40 * 1000,
   
    expect: {
     
-      timeout: 25000
+      timeout: 45000
  
     },
 
