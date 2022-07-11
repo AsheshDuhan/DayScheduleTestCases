@@ -1,5 +1,5 @@
 const {test, expect} = require('@playwright/test');
-let webContext;
+let WebContext;
 
 test.beforeAll( async({browser}) =>{
 
@@ -16,13 +16,30 @@ test.beforeAll( async({browser}) =>{
 
     await page.click('.close');
 
-    await context.storageState({storageState:'state.json'});  //when new context created data stored in json path 
+    await context.storageState({path:'state.json'});  //when new context created data stored in json path 
 
     webContext = await browser.newContext({storageSate:'state.json'}); // let webcontext as global variable
 
 });
 
-test('create event', async()=>{
-    const page = await webContext.newPage();
-    await page.goto('https://app.dayschedule.in/resources');
-})
+
+    test('clicking on event button', async()=>{
+        const page = await WebContext.newPage();
+        await page.goto('https://app.dayschedule.in/resources');
+        
+        const addbtn = page.locator('.col-6 button');
+        const eventbtn = await page.locator('.dropdown-menu.show a').nth(0);
+    
+        await addbtn.click();
+        await eventbtn.click();
+    });
+    // const page = await webContext.newPage();
+    // await page.goto('https://app.dayschedule.in/resources');
+
+    // const addbtn = page.locator('.col-6 button');
+    // await addbtn.click();
+
+
+    // await page.pause();
+
+

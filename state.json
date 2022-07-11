@@ -1,0 +1,93 @@
+{
+  "cookies": [
+    {
+      "sameSite": "Lax",
+      "name": "_gcl_au",
+      "value": "1.1.671071356.1657523305",
+      "domain": ".dayschedule.in",
+      "path": "/",
+      "expires": 1665299305,
+      "httpOnly": false,
+      "secure": false
+    },
+    {
+      "sameSite": "Lax",
+      "name": "_ga",
+      "value": "GA1.1.2030543568.1657523305",
+      "domain": ".dayschedule.in",
+      "path": "/",
+      "expires": 1692083305.459284,
+      "httpOnly": false,
+      "secure": false
+    },
+    {
+      "sameSite": "None",
+      "name": "IDE",
+      "value": "AHWqTUlBiFsjHUjIM4Wgyuw2SpcJyIem72jKNUNXqEQsd-DmDiGbNM2Sp61DvCcq",
+      "domain": ".doubleclick.net",
+      "path": "/",
+      "expires": 1692083306.763577,
+      "httpOnly": true,
+      "secure": true
+    },
+    {
+      "sameSite": "Lax",
+      "name": "crisp-client%2Fsession%2F83522926-6c88-4b6c-926c-69c966124a65",
+      "value": "session_48194b0a-ebb0-458c-a2c6-04211944e3a6",
+      "domain": ".dayschedule.in",
+      "path": "/",
+      "expires": 1673291307,
+      "httpOnly": false,
+      "secure": false
+    },
+    {
+      "sameSite": "Lax",
+      "name": "auth_token",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0MDAsIm9yZ19pZCI6MTQxLCJpYXQiOjE2NTc1MjMzMDcsImV4cCI6MTY1NzYwOTcwN30.n8mdPEdSTcyxFlj6Bvf5HqjmreDYt8VXae7bOtS62No",
+      "domain": ".dayschedule.in",
+      "path": "/",
+      "expires": 1657609707,
+      "httpOnly": false,
+      "secure": false
+    },
+    {
+      "sameSite": "Lax",
+      "name": "auth_user",
+      "value": "%7B%22user_id%22%3A400%2C%22org_id%22%3A141%2C%22name%22%3A%22Ashish%20Duhan%22%2C%22email%22%3A%22ashish.duhan%40agenty.com%22%2C%22role%22%3A%22Owner%22%2C%22time_zone%22%3A%22Asia%2FKolkata%22%2C%22is_unsubscribed%22%3A0%2C%22is_verified%22%3A1%2C%22avatar%22%3A%22https%3A%2F%2Fcdn.dayschedule.com%2Fuploads%2Forg-141%2FAvatar%2F400-1656933987869-logo-a.png%22%2C%22phone%22%3A%22%2B91%209650473508%22%2C%22level%22%3A%22Level1%22%2C%22is_external%22%3A0%2C%22page_id%22%3A161%2C%22domain%22%3A%22ashish-agenty%22%2C%22plan%22%3A%22Enterprise%22%2C%22seats_limit%22%3A5%2C%22seats_used%22%3A3%2C%22org_name%22%3A%22Ashish%20%22%2C%22status%22%3A%22active%22%2C%22event_limit%22%3A1000%2C%22pages_access%22%3Atrue%2C%22branding_access%22%3Atrue%2C%22workflow_access%22%3Atrue%2C%22group_event_access%22%3Atrue%2C%22round_robin_event_access%22%3Atrue%2C%22feedback_access%22%3Atrue%2C%22payment_access%22%3Atrue%2C%22connection_limit%22%3A15%2C%22page_limit%22%3A100%7D",
+      "domain": ".dayschedule.in",
+      "path": "/",
+      "expires": 1657609708,
+      "httpOnly": false,
+      "secure": false
+    },
+    {
+      "sameSite": "Lax",
+      "name": "_ga_DXEZS8S532",
+      "value": "GS1.1.1657523305.1.1.1657523309.0",
+      "domain": ".dayschedule.in",
+      "path": "/",
+      "expires": 1692083309.086708,
+      "httpOnly": false,
+      "secure": false
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://app.dayschedule.in",
+      "localStorage": [
+        {
+          "name": "changeLogReadDate",
+          "value": "2022-07-11T07:08:29.330Z"
+        },
+        {
+          "name": "crisp-client/trigger/83522926-6c88-4b6c-926c-69c966124a65/visit/count",
+          "value": "1"
+        },
+        {
+          "name": "crisp-client/trigger/83522926-6c88-4b6c-926c-69c966124a65/visit/last",
+          "value": "1657523307500"
+        }
+      ]
+    }
+  ]
+}
