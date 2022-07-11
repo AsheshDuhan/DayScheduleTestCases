@@ -14,7 +14,7 @@ test.beforeAll( async({browser}) =>{
 
     await page.waitForLoadState("networkidle");
 
-    await page.click('.close');;
+    await page.click('.close');
 
     await context.storageState({storageState:'state.json'});  //when new context created data stored in json path 
 
