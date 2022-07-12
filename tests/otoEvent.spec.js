@@ -49,3 +49,16 @@ test('clicking on new event', async()=>{
 //     console.log(await expect(page).toHaveTitle('Events - DaySchedule'));
 });
 
+test.only('one_to_one event', async({page})=>{
+    await page.goto("https://app.dayschedule.in/resources/events/add");
+    await page.pause();
+    await page.title();
+    await expect(page).toHaveTitle("Events - DaySchedule");
+
+    const otobtn = page.locator("label").first();
+    await otobtn.click();
+    console.log(await expect(page).toHaveURL("https://app.dayschedule.in/resources/events/add"));
+
+
+});
+
