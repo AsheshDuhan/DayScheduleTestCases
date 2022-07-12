@@ -21,24 +21,31 @@ test.beforeAll(async({browser})=>{
 test('clicking on new event', async()=>{
     const page = await WebContext.newPage();
     await page.goto('https://app.dayschedule.in/resources');
-    
     const addbtn = page.locator('.col-6 button');
     await addbtn.click();
-   
-    const btn = "New Event";
-    const eventbtn = page.locator('a.dropdown-item');
-    const count = await eventbtn.count();
-    for(let i=0; i<count; ++i){
+    await page.locator("text = New Event").click();
 
-        if (await eventbtn.nth(i).locator("i").textContent()==btn)
-        {
-            await eventbtn.nth(i).locator("text = New Event").click();
-            break;
-        }
-
-    }
     await page.goto('https://app.dayschedule.in/resources/events/add');
-    await page.title();
-    console.log(await expect(page).toHaveTitle('Events - DaySchedule'));
+
+
+    
+    // const addbtn = page.locator('.col-6 button');
+    // await addbtn.click();
+   
+    // const btn = "ew kkk";
+    // const eventbtn = page.locator('a.dropdown-item');
+    // const count = await eventbtn.count();
+    // for(let i=0; i<count; ++i){
+
+    //     if (await eventbtn.nth(i).locator("i").textContent()==btn)
+    //     {
+    //         console.log("ABC");
+    //         await eventbtn.nth(i).locator("text = New Event").click();
+    //     }
+
+    // }
+    // await page.goto('https://app.dayschedule.in/resources/events/add');
+//     await page.title();
+//     console.log(await expect(page).toHaveTitle('Events - DaySchedule'));
 });
 
