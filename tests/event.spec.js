@@ -16,6 +16,8 @@ test('create event', async({browser})=>{
 
     await page.waitForLoadState("networkidle");
     await page.locator(".close").click();
+  
+
     console.log(await page.locator('.nav-item ').allTextContents());
 
     
@@ -52,9 +54,35 @@ test('create event', async({browser})=>{
     await selectbtn.click();
 
     // await page.locator('.nav-link.active ').click();
+    await page.locator("[name=event_name]").type("Testing ");
+    await page.locator('[title="Bold"]').click();
+    await page.locator('[title="Italic"]').click();
+    await page.locator('[title="Underline"]').click();
+    
+    const description = page.locator(".show-placeholder");
+    await description.type("One to One");
+    await page.locator('[title="Unordered List"]').click();
+    await page.keyboard.press('Enter');
+    
+    // await page.locator('[title="Ordered List"]').click();
+    await page.pause();
+
+    
+    
+    
+
+    
+    
+
+
 
 
     
+
+
+
+
+
 
 
 
