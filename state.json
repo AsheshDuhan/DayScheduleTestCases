@@ -3,50 +3,50 @@
     {
       "sameSite": "Lax",
       "name": "_gcl_au",
-      "value": "1.1.875552730.1657604505",
+      "value": "1.1.1870396394.1657606888",
       "domain": ".dayschedule.in",
       "path": "/",
-      "expires": 1665380504,
+      "expires": 1665382888,
       "httpOnly": false,
       "secure": false
     },
     {
       "sameSite": "Lax",
       "name": "_ga",
-      "value": "GA1.1.1870503997.1657604505",
+      "value": "GA1.1.465942293.1657606889",
       "domain": ".dayschedule.in",
       "path": "/",
-      "expires": 1692164505.070171,
+      "expires": 1692166888.596664,
       "httpOnly": false,
       "secure": false
     },
     {
       "sameSite": "None",
       "name": "IDE",
-      "value": "AHWqTUk5XVPVDnvoiN1YfiB3lG8pXXP1DS5cZFjWMUr27EVoXF4VlEJvfnkzSUGo",
+      "value": "AHWqTUnK5ox57tR32o7DsXQ8DjhlEBZmmMRfEYLFOVTZioYy-jrx6AuGjS9HfD11",
       "domain": ".doubleclick.net",
       "path": "/",
-      "expires": 1692164506.344952,
+      "expires": 1692166889.667033,
       "httpOnly": true,
       "secure": true
     },
     {
       "sameSite": "Lax",
       "name": "crisp-client%2Fsession%2F83522926-6c88-4b6c-926c-69c966124a65",
-      "value": "session_5a4d5347-ded8-4435-8eec-4aac4f2391d7",
+      "value": "session_ed7d3b95-9e2c-473f-929c-93e591ad245f",
       "domain": ".dayschedule.in",
       "path": "/",
-      "expires": 1673372506,
+      "expires": 1673374889,
       "httpOnly": false,
       "secure": false
     },
     {
       "sameSite": "Lax",
       "name": "auth_token",
-      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0MDAsIm9yZ19pZCI6MTQxLCJpYXQiOjE2NTc2MDQ1MDgsImV4cCI6MTY1NzY5MDkwOH0.HF3orJx01ZBmShy5qrgJzLdVXAqzN_EcVpuYFWUQ67U",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0MDAsIm9yZ19pZCI6MTQxLCJpYXQiOjE2NTc2MDY4OTAsImV4cCI6MTY1NzY5MzI5MH0.KW54fQX1bLfRWdpoZVahrmjG9G6JPYrAw-4oMQQOBJU",
       "domain": ".dayschedule.in",
       "path": "/",
-      "expires": 1657690907,
+      "expires": 1657693290,
       "httpOnly": false,
       "secure": false
     },
@@ -56,17 +56,17 @@
       "value": "%7B%22user_id%22%3A400%2C%22org_id%22%3A141%2C%22name%22%3A%22Ashish%20Duhan%22%2C%22email%22%3A%22ashish.duhan%40agenty.com%22%2C%22role%22%3A%22Owner%22%2C%22time_zone%22%3A%22Asia%2FKolkata%22%2C%22is_unsubscribed%22%3A0%2C%22is_verified%22%3A1%2C%22avatar%22%3A%22https%3A%2F%2Fcdn.dayschedule.com%2Fuploads%2Forg-141%2FAvatar%2F400-1656933987869-logo-a.png%22%2C%22phone%22%3A%22%2B91%209650473508%22%2C%22level%22%3A%22Level1%22%2C%22is_external%22%3A0%2C%22page_id%22%3A161%2C%22domain%22%3A%22ashish-agenty%22%2C%22plan%22%3A%22Enterprise%22%2C%22seats_limit%22%3A5%2C%22seats_used%22%3A3%2C%22org_name%22%3A%22Ashish%20%22%2C%22status%22%3A%22active%22%2C%22event_limit%22%3A1000%2C%22pages_access%22%3Atrue%2C%22branding_access%22%3Atrue%2C%22workflow_access%22%3Atrue%2C%22group_event_access%22%3Atrue%2C%22round_robin_event_access%22%3Atrue%2C%22feedback_access%22%3Atrue%2C%22payment_access%22%3Atrue%2C%22connection_limit%22%3A15%2C%22page_limit%22%3A100%7D",
       "domain": ".dayschedule.in",
       "path": "/",
-      "expires": 1657690908,
+      "expires": 1657693291,
       "httpOnly": false,
       "secure": false
     },
     {
       "sameSite": "Lax",
       "name": "_ga_DXEZS8S532",
-      "value": "GS1.1.1657604505.1.1.1657604508.0",
+      "value": "GS1.1.1657606888.1.1.1657606891.0",
       "domain": ".dayschedule.in",
       "path": "/",
-      "expires": 1692164508.508017,
+      "expires": 1692166891.935575,
       "httpOnly": false,
       "secure": false
     }
@@ -77,7 +77,7 @@
       "localStorage": [
         {
           "name": "changeLogReadDate",
-          "value": "2022-07-12T05:41:48.758Z"
+          "value": "2022-07-12T06:21:32.234Z"
         },
         {
           "name": "crisp-client/trigger/83522926-6c88-4b6c-926c-69c966124a65/visit/count",
@@ -85,7 +85,7 @@
         },
         {
           "name": "crisp-client/trigger/83522926-6c88-4b6c-926c-69c966124a65/visit/last",
-          "value": "1657604507756"
+          "value": "1657606889998"
         }
       ]
     }
