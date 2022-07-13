@@ -6,13 +6,9 @@ test('create event', async({browser})=>{
     const page = await context.newPage();
     await page.goto("https://app.dayschedule.in/login");
 
-    const username = page.locator("#email");
-    const password = page.locator("#password");
-    const signin = page.locator("button[type='submit']");
-
-    await username.type("ashish.duhan@agenty.com");
-    await password.type("Ashi$h2710");
-    await signin.press("Enter");
+    await page.type('#email', 'ashish.duhan@agenty.com');
+    await page.fill('#password', 'Ashi$h2710');
+    await page.click("[type='submit']");
 
     await page.waitForLoadState("networkidle");
     await page.locator(".close").click();
