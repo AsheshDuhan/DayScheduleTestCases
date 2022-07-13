@@ -63,14 +63,23 @@ test('create event', async({browser})=>{
     const description1 = page.locator(".show-placeholder");
 
     await description.type("One to One");
+    // await page.pause();
+
 
     await page.keyboard.press('Enter');
     await page.locator('[title="Unordered List"]').click();
     await page.keyboard.type('Test');
+
     // await page.locator('[title="Ordered List"]').click();
     // await page.keyboard.press('Enter');
 
-    await page.keyboard.type('OneToOne');
+    // await page.keyboard.type('OneToOne');
+    const color = page.locator(".color-picker ");
+    await color.press("Enter");
+
+    // await page.locator("#acb019d13dd9-1");
+
+
 
 
    
@@ -79,7 +88,6 @@ test('create event', async({browser})=>{
 
     
 
-    await page.pause();
 
     
     
